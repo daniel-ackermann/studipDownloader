@@ -29,7 +29,7 @@ class Application(tk.Frame):
     def remove(self, course):
         index = course.id
         self.courses[index]['label'].destroy()
-        self.courses[index]['entry'].destroy()
+        self.courses[index]['downloadPath'].destroy()
         self.courses[index]['startDownloadButton'].destroy()
         self.courses[index]['stopDownloadButton'].destroy()
         self.courses[index]['removeButton'].destroy()

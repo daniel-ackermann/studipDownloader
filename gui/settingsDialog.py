@@ -1,10 +1,14 @@
+import tkinter as tk
+
+
 class SettingsDialog():
 
     def __init__(self, root, settings) -> None:
         self.settings = settings
+        self.root = root
 
     def showSettings(self):
-        self.pop = tk.Toplevel(root)
+        self.pop = tk.Toplevel(self.root)
         self.mainUrl = tk.Entry(self.pop)
         self.username = tk.Entry(self.pop)
         self.password = tk.Entry(self.pop)
